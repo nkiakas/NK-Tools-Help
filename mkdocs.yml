@@ -46,3 +46,40 @@ plugins:
         - locale: el
           name: Ελληνικά
           build: true
+          nav_translations:
+            Home: Αρχική
+            Surfaces: Εδάφη
+            Points: Σημεία
+            Alignments: Πολυγωνικές οδού
+            Profiles: Μηκοτομές
+            Utilities: Βοηθήματα
+nav:
+  - Home: index.md
+  - AutoCAD:
+      - autocad/calculate-total-lengths.md
+      - autocad/calculate-total-areas.md
+      - autocad/create-point-leaders.md
+      - autocad/hatch-box-measurement.md
+      - autocad/create-area-perimeter-leaders.md
+      - autocad/extract-line-tables.md
+      - autocad/drawing-cleanup.md
+  - Surfaces:
+      - surfaces/project-points-to-surface.md
+  - Points:
+      - points/create-cogo-points-from-alignment-profile.md
+      - points/create-high-low-cogo-points.md
+  - Alignments:
+      - alignments/create-alignments-from-objects.md
+      - alignments/create-alignments-profiles-from-feature-lines.md
+      - alignments/create-polylines-from-alignments.md
+      - alignments/check-alignment-intersections.md
+      - alignments/create-custom-connected-alignment.md
+  - Profiles:
+      - profiles/batch-create-surface-profiles.md
+      - profiles/create-projected-offset-profile.md
+      - profiles/check-profile-coverage.md
+      - profiles/create-polylines-from-profiles-in-profile-view.md
+      - profiles/convert-superimposed-profile-to-static.md
+      - profiles/merge-profiles.md
+  - Utilities:
+      - utilities/drawing-health-check.md
