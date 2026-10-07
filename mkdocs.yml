@@ -1,0 +1,48 @@
+site_name: NK Tools
+site_url: https://nkiakas.github.io/NK-Tools-Help/
+theme:
+  name: material
+  language: en
+  palette:
+    # Φωτεινό θέμα (ακολουθεί τη ρύθμιση των Windows)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Σκοτεινό θέμα
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: el
+          name: Ελληνικά
+          build: true
